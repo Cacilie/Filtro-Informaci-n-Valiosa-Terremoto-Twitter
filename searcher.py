@@ -2,6 +2,7 @@ import tweepy
 import json
 from time import sleep
 from credentials import *
+from keywords import *
 from classes.tuit import Tuit
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -18,7 +19,7 @@ tuits = []
 
 counter = 0
 
-while counter < 10:
+while counter < 1:
     data = api.search(q='AyudaCDMX',
             result_type="recent")
 
