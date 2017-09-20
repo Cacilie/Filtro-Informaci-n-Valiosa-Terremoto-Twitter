@@ -8,15 +8,24 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-data = api.search(q='AyudaCDMX',
-        result_type="recent")
+#data = api.search(q='AyudaCDMX',
+#        result_type="recent")
 # print(data[1])
 
 tuits = []
 
-for d in data:
-    tuits.append(Tuit(d.author.screen_name, d.text))
 
+
+counter = 0
+
+while counter < 10:
+    data = api.search(q='AyudaCDMX',
+            result_type="recent")
+
+    for d in data:
+        tuits.append(Tuit(d.author.screen_name, d.text))
+
+    counter += 1
 
 for t in tuits:
     print(t.toString())
