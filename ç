@@ -9,12 +9,9 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-data = api.search(q='AyudaCDMX',
-        result_type="recent")
-
-print("!!!!TODA DATA!!!!")
-print(data[1])
-print("!!!TODA DATA!!")
+#data = api.search(q='AyudaCDMX',
+#        result_type="recent")
+# print(data[1])
 
 tuits = []
 
@@ -27,7 +24,7 @@ while counter < 1:
             result_type="recent")
 
     for d in data:
-        tuits.append(Tuit(d.author.screen_name, d.text, d.id_str))
+        tuits.append(Tuit(d.author.screen_name, d.text))
 
     counter += 1
 
@@ -35,21 +32,9 @@ while counter < 1:
  #   print(t.toString())
 
 
-tuitsFiltrados = []
-
 for t in tuits:
     for kw in kws:
         if t.getText().lower().find(kw) != -1:
-            tuitsFiltrados.append(t)
-            
-
-tuitsFiltrados = list(set(tuitsFiltrados))
-
-
-for t in tuitsFiltrados:
-    print(t.toString())
-
-for t in tuitsFiltrados:
-    api.retweet(t.getIdt())
-# api.retweet(910628651036577792)
+            #print(t.getText().lower())
+            print(t.toString())
         
