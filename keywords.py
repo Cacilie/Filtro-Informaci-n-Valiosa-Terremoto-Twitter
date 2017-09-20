@@ -1,4 +1,4 @@
-kw = ['evivar',
+kws = ['evivar',
         'eviten',
         'centro',
         'acopio',

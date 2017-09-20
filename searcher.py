@@ -28,5 +28,12 @@ while counter < 1:
 
     counter += 1
 
+#for t in tuits:
+ #   print(t.toString())
+
+
 for t in tuits:
-    print(t.toString())
+    for kw in kws:
+        if t.getText().find(kw) != -1:
+            print(t.toString())
+        

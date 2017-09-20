@@ -7,5 +7,8 @@ class Tuit:
     def toString(self):
         return str("Usuario: " + self.user + " Text: " + self.text)
 
+    def getText(self):
+        return str(self.text)
+
 
         
