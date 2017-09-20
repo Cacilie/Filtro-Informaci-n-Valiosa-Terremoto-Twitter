@@ -34,6 +34,14 @@ Ejemplo:
 Para asociar tu cuenta, tienes que llenar los datos que se piden en credentials.example.py 
 y quitarle el credentials, de tal manera que quede credentials.py
 
+
+## Si deseas...
+
+Si deseas agregar más palabras clave, añadelas en el archivo keywords.py-
+Si deseas cambiar el hashtag buscado, sólo tienes que modificar el query en searcher.py linea 26.
+
+Es necesario configurar que el script se ejecute cada cierto tiempo en el servidor. Bastará con un script :D
+
 ## Se pretende
 
 Que se consiga información más valiosa.
