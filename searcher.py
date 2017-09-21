@@ -13,7 +13,7 @@ api = tweepy.API(auth)
 
 tuits = []
 
-data = api.search(q='sismo', result_type="recent")
+data = api.search(q='@comoayudarmx', result_type="recent")
 
 print "%s tuits encontrados" % (len(data))
 
