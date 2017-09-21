@@ -14,5 +14,8 @@ class Tuit:
     def getIdt(self):
         return self.idt
 
+    def getAuthor(self):
+        return self.user
+
 
         

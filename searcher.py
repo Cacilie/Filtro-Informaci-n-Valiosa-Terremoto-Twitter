@@ -10,11 +10,7 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 '''
-
-
-
-
-data = api.search(q='AyudaCDMX',
+data = api.search(q='@comoayudarmx',
         result_type="recent")
 
 print("!!!!TODA DATA!!!!")
@@ -28,7 +24,7 @@ tuits = []
 counter = 0
 
 while counter < 1:
-    data = api.search(q='AyudaCDMX',
+    data = api.search(q='@comoayudarmx',
             result_type="recent")
 
     for d in data:
@@ -44,7 +40,7 @@ tuitsFiltrados = []
 
 for t in tuits:
     for kw in kws:
-        if t.getText().lower().find(kw) != -1:
+        if t.getText().lower().find(kw) != -1 and t.getAuthor() != 'comoayudarmx' and t.getText().lower().find('comoayudarmx:') == -1:
             tuitsFiltrados.append(t)
             
 
@@ -55,6 +51,8 @@ for t in tuitsFiltrados:
     print(t.toString())
 
 for t in tuitsFiltrados:
-    api.retweet(t.getIdt())
-# api.retweet(910628651036577792)
+    try:
+        api.retweet(t.getIdt())
+    except:
+        print("No new tweets")
         
