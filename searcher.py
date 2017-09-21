@@ -11,26 +11,14 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-data = api.search(q='@comoayudarmx',
-        result_type="recent")
-
-#esto satura de mucha info la pantalla
-#print("!!!!TODA DATA!!!!")
-#print(data[1])
-#print("!!!TODA DATA!!")
-
 tuits = []
 
-counter = 0
+data = api.search(q='sismo', result_type="recent")
 
-while counter < 1:
-    data = api.search(q='@comoayudarmx',
-            result_type="recent")
+print "%s tuits encontrados" % (len(data))
 
-    for d in data:
-        tuits.append(Tuit(d.author.screen_name, d.text, d.id_str))
-
-    counter += 1
+for d in data:
+    tuits.append(Tuit(d.author.screen_name, d.text, d.id_str))
 
 tuitsFiltrados = []
 
@@ -43,9 +31,10 @@ for t in tuits:
 
 tuitsFiltrados = list(set(tuitsFiltrados))
 
-
 for t in tuitsFiltrados:
     print(t.toString())
+
+print "%s tuits filtrados" % (len(tuitsFiltrados))
 
 for t in tuitsFiltrados:
     try:
