@@ -22,4 +22,6 @@ kws = ['evitar',
         '#tenemos',
         'requieren',
         '#requiero',
-        'requiero']
+        'requiero',
+        'necesitamos',
+        '#necesitamos']
