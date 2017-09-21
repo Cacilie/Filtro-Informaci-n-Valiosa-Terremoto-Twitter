@@ -39,7 +39,8 @@ tuitsFiltrados = []
 for t in tuits:
     for kw in kws:
         if t.getText().lower().find(kw) != -1 and t.getAuthor() != 'comoayudarmx' and t.getText().lower().find('comoayudarmx:') == -1:
-            tuitsFiltrados.append(t)
+            if len(t.getText().split()) > 4:
+                tuitsFiltrados.append(t)
             
 
 tuitsFiltrados = list(set(tuitsFiltrados))
