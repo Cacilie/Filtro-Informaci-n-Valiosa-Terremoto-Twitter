@@ -9,14 +9,12 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-'''
 data = api.search(q='@comoayudarmx',
         result_type="recent")
 
 print("!!!!TODA DATA!!!!")
 print(data[1])
 print("!!!TODA DATA!!")
-'''
 tuits = []
 
 
