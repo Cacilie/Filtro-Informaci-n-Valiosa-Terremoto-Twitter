@@ -1,3 +1,5 @@
+ # -*- coding: utf-8 -*-
+
 import tweepy
 import json
 from time import sleep
@@ -12,12 +14,12 @@ api = tweepy.API(auth)
 data = api.search(q='@comoayudarmx',
         result_type="recent")
 
-print("!!!!TODA DATA!!!!")
-print(data[1])
-print("!!!TODA DATA!!")
+#esto satura de mucha info la pantalla
+#print("!!!!TODA DATA!!!!")
+#print(data[1])
+#print("!!!TODA DATA!!")
+
 tuits = []
-
-
 
 counter = 0
 
@@ -30,15 +32,11 @@ while counter < 1:
 
     counter += 1
 
-#for t in tuits:
- #   print(t.toString())
-
-
 tuitsFiltrados = []
 
 for t in tuits:
     for kw in kws:
-        if t.getText().lower().find(kw) != -1 and t.getAuthor() != 'comoayudarmx' and t.getText().lower().find('comoayudarmx:') == -1:
+        if kw in t.getText().lower() and t.getAuthor() != 'comoayudarmx' and not 'comoayudarmx:' in t.getText().lower():
             if len(t.getText().split()) > 4:
                 tuitsFiltrados.append(t)
             
