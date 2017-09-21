@@ -21,6 +21,10 @@ Las palabras claves actuales son:
 13. riesgo
 14. necesidades
 15. necesita
+16. apoyo
+17. urgente
+18. agua
+19. medicos
 
 
 Se recuperan tweets relacionados a estas palabras claves y actualmente al hashtag #AyudaCMX  y se retweetea a la cuenta asociada.

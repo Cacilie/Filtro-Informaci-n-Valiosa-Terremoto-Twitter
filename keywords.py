@@ -12,4 +12,8 @@ kws = ['evitar',
         'necesitan',
         'riesgo',
         'necesidades',
-        'necesita']
+        'necesita',
+        'apoyo',
+        'urgente',
+        'agua',
+        'médicos']
