@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 kws = ['evitar',
         'eviten',
         'centro',
@@ -16,4 +18,17 @@ kws = ['evitar',
         'apoyo',
         'urgente',
         'agua',
-        'médicos']
+        'médicos',
+        '#busco',
+        'busco',
+        'tengo',
+        '#tengo',
+        '#necesito',
+        'necesito',
+        'tenemos',
+        '#tenemos',
+        'requieren',
+        '#requiero',
+        'requiero',
+        'necesitamos',
+        '#necesitamos']
