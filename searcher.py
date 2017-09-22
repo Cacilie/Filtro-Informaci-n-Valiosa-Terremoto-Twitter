@@ -3,7 +3,7 @@
 import tweepy
 import json
 from time import sleep
-from credentials_example import *
+from credentials import *
 from keywords import *
 from classes.tuit import Tuit
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
