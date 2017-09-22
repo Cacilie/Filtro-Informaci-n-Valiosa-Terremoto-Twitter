@@ -46,5 +46,9 @@ Es necesario configurar que el script se ejecute cada cierto tiempo en el servid
 
 Que se consiga información más valiosa.
 
+# Importante
+
+Este trabajo y muchos otros apoyan las iniciativas de Codeando México. Si deseas ayudar te invito al slack
+codeandomexico.slack.com
 
 
