@@ -21,6 +21,23 @@ Las palabras claves actuales son:
 13. riesgo
 14. necesidades
 15. necesita
+16. apoyo
+17. urgente
+18. agua
+19. medicos
+20. #busco
+21. busco
+22. tengo
+23. #tengo
+24. #necesito
+25. necesito
+26. tenemos
+27. #tenemos
+28. requieren
+29. #requiero
+30. requiero
+31. necesitamos
+32. #necesitamos
 
 
 Se recuperan tweets relacionados a estas palabras claves y que incluyan como mención a @comoayudarmx y se retweetea a la cuenta asociada.
