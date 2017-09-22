@@ -23,12 +23,12 @@ Las palabras claves actuales son:
 15. necesita
 
 
-Se recuperan tweets relacionados a estas palabras claves y actualmente al hashtag #AyudaCMX  y se retweetea a la cuenta asociada.
+Se recuperan tweets relacionados a estas palabras claves y que incluyan como mención a @comoayudarmx y se retweetea a la cuenta asociada.
 
 Ejemplo:
 
 1.- Se corre el Script.
-2.- El script busca información relevante con el #AyudaCMX y que pase los filtros.
+2.- El script busca información relevante con mención a @comoayudarmx y que pase los filtros.
 3.- Se hace RT a la información relevante con la cuenta asociada.
 
 Para asociar tu cuenta, tienes que llenar los datos que se piden en credentials.example.py 
